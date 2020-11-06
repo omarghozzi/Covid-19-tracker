@@ -1,0 +1,96 @@
+.symptoms {
+  text-align: center;
+}
+
+.symptoms > h1 {
+  color: #282872;
+  word-wrap: break-word;
+  margin: 20px 0;
+  overflow-wrap: break-word;
+}
+
+.symptoms > p {
+  font-size: x-small;
+  font-weight: 600;
+  width: 700px;
+  word-wrap: break-word;
+  margin: 20px auto;
+  color: grey;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+.block_cards {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px;
+}
+
+.block_cards2 {
+  background-color: #fafafc;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.block_cards2 > h1 {
+  color: #282872;
+  word-wrap: break-word;
+  margin: 20px 0;
+}
+
+.block_cards2 > p {
+  font-size: x-small;
+  font-weight: 600;
+  width: 700px;
+  word-wrap: break-word;
+  margin: 20px auto;
+  color: grey;
+  text-align: center;
+}
+
+.block_cards2 > img {
+  width: 100%;
+  height: 300px;
+}
+
+.block_cards3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .symptoms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    padding: 5px;
+    overflow-wrap: break-word;
+  }
+
+  .symptoms > p {
+    width: 100%;
+    padding: 0 5px;
+  }
+
+  .symptoms > img {
+    width: 100%;
+  }
+
+  .block_cards {
+    flex-direction: column;
+  }
+
+  .block_cards2 {
+    padding: 0 5px 0 5px;
+  }
+
+  .block_cards2 > p {
+    width: 100%;
+    padding: 0 5px;
+  }
+}

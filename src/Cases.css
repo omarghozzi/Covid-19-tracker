@@ -1,0 +1,157 @@
+.cases {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.cases_map {
+  background-image: url("./imgs/1280px-World_map_with_points.svg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 243px;
+  width: 500px;
+  position: relative;
+}
+
+.cases_map > .cases_box {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px rgb(0, 0, 0, 0.1), -2px -2px 20px rgb(0, 0, 0, 0.1);
+  width: fit-content;
+  padding: 10px 25px;
+  border: none;
+  text-align: center;
+}
+
+.cases_box > p {
+  color: gray;
+  font-weight: 600;
+  font-size: small;
+}
+
+.cases_box > h1 {
+  font-size: large;
+}
+
+.box_cases,
+.box_recovered,
+.box_deaths,
+.box_active {
+  position: absolute;
+}
+
+.box_cases {
+  left: 10px;
+  top: 0;
+}
+
+.cases_map > .box_cases > h1 {
+  color: #1c78e8;
+}
+
+.box_recovered {
+  top: 30px;
+  right: 77px;
+}
+
+.cases_map > .box_recovered > h1 {
+  color: #83ce55;
+}
+
+.box_deaths {
+  top: 125px;
+  left: 50px;
+}
+
+.cases_map > .box_deaths > h1 {
+  color: #e14a42;
+}
+
+.box_active {
+  top: 170px;
+  right: 25px;
+}
+
+.cases_map > .box_active > h1 {
+  color: #fec933;
+}
+
+.cases_update {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  width: 250px;
+}
+
+.cases_update > h1 {
+  font-size: x-large;
+  color: #09095b;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box > .update_cases,
+.update_deaths,
+.update_recovered,
+.update_active {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px rgb(0, 0, 0, 0.1), -2px -2px 20px rgb(0, 0, 0, 0.1);
+  width: fit-content;
+  padding: 10px 25px;
+  margin: 15px 5px;
+  border: none;
+  text-align: center;
+  font-size: x-small;
+}
+
+.box > h1 {
+  font-size: medium;
+}
+
+.update_cases > h1 {
+  color: #09095b;
+}
+
+.update_recovered > h1 {
+  color: #83ce55;
+}
+
+.update_deaths > h1 {
+  color: #e14a42;
+}
+
+.update_active > h1 {
+  color: #fec933;
+}
+
+.MuiSelect-root {
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important;
+}
+
+.country_img {
+  height: 20px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+@media (max-width: 800px) {
+  .cases {
+    flex-direction: column;
+    padding: 5px 5px;
+    width: 100vw;
+  }
+
+  .cases_map {
+    width: 100%;
+  }
+}
